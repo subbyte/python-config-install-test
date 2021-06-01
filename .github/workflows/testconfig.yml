@@ -22,4 +22,4 @@ jobs:
       - name: Print config path
         run: |
           pwd
-          ls ~/.local/etc/testpkg
+          find ~ -name testpkg.conf
