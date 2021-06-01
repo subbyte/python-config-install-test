@@ -21,8 +21,5 @@ jobs:
           python -m pip install .
       - name: Print config path
         run: |
-          pwd
           find /opt -name testpkg.conf
-          find /etc -name testpkg.conf
-          find /usr -name testpkg.conf
-          find /home -name testpkg.conf
+          python -m testpkg
